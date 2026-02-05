@@ -1,0 +1,61 @@
+body{
+    margin:0;
+    font-family:'Comic Sans MS';
+    background:linear-gradient(#ff9a9e,#fad0c4);
+    overflow:hidden;
+    color:white;
+    text-align:center;
+    }
+    
+    .wrap{margin-top:40px;}
+    
+    .hug img{
+    width:250px;
+    border-radius:20px;
+    box-shadow:0 0 20px pink;
+    }
+    
+    p{font-size:18px;padding:15px;}
+    
+    .heart{
+    position:absolute;
+    animation:float 6s linear infinite;
+    }
+    
+    @keyframes float{
+    0%{bottom:-10px;}
+    100%{bottom:100vh;}
+    }
+    
+    /* LOVE POPUP */
+    
+    #lovePopup{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.6);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    opacity:0;
+    pointer-events:none;
+    transition:1s;
+    }
+    
+    #lovePopup.show{
+    opacity:1;
+    pointer-events:auto;
+    }
+    
+    .loveText{
+    font-size:60px;
+    color:#ffb6c1;
+    text-shadow:0 0 20px pink,0 0 40px hotpink;
+    animation:pulse 2s infinite;
+    }
+    
+    @keyframes pulse{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.2);}
+    100%{transform:scale(1);}
+    }
+    

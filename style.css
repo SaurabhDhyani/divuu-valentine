@@ -1,0 +1,72 @@
+body{
+    margin:0;
+    font-family:'Comic Sans MS';
+    overflow:hidden;
+    background:#ffb6c1;
+    }
+    
+    .bg{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:radial-gradient(circle at top,#ffd1dc,#ff9a9e);
+    animation:bgmove 8s infinite alternate;
+    }
+    
+    @keyframes bgmove{
+    0%{filter:hue-rotate(0deg);}
+    100%{filter:hue-rotate(30deg);}
+    }
+    
+    .container{
+    position:relative;
+    z-index:2;
+    text-align:center;
+    margin-top:40px;
+    color:white;
+    }
+    
+    .msg{font-size:18px;padding:10px;}
+    
+    .cute-gif{
+    width:150px;
+    border-radius:15px;
+    margin:10px;
+    }
+    
+    .buttons button{
+    padding:15px 25px;
+    font-size:18px;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+    margin:10px;
+    }
+    
+    #yes{background:#ff4d6d;color:white;}
+    #no{background:#444;color:white;position:absolute;}
+    
+    .hidden{display:none;}
+    
+    .spinner{
+    width:40px;height:40px;
+    border:5px solid white;
+    border-top:5px solid pink;
+    border-radius:50%;
+    margin:20px auto;
+    animation:spin 1s linear infinite;
+    }
+    
+    @keyframes spin{to{transform:rotate(360deg);}}
+    
+    /* Hearts */
+    .heart,.blush,.fun{
+    position:absolute;
+    animation:float 5s linear infinite;
+    }
+    
+    @keyframes float{
+    0%{bottom:-10px;}
+    100%{bottom:100vh;}
+    }
+    
